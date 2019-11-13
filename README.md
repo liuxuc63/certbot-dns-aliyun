@@ -50,3 +50,10 @@ certbot certonly -a certbot-dns-aliyun:dns-aliyun \
     -d example.com \
     -d "*.example.com"
 ```
+
+## Build docker image:
+```
+git clone https://github.com/liuxuc63/certbot-dns-aliyun.git
+docker image build -t certbot:1.0 .
+docker run -d --name my_certbot certbot:1.0
+```
